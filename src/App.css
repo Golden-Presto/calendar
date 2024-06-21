@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 600px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: powderblue;
+  padding: 0 50px;
+  font-size: 1.5rem;
+  height: 3rem;
+}
+
+#days {
+  width: 90%;
+  text-align: center;
+}
+
+#yearForm {
+  display: flex;
+  justify-content: center;
+}
+
+#year {
+  text-align: center;
+  background-color: powderblue;
+  border: none;
+  font-size: 1.5rem;
+  transition: .2s;
+}
+
+#year:focus {
+  outline: none;
+}
+
+button {
+  height: 2rem;
+  width: 2rem;
+  background-color: palevioletred;
+  border: none;
+  border-radius: 30%;
+}
+
+button:hover {
+  cursor: pointer;
+
+}
+
+.month {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 50px;
+  font-weight: bold;
+}
+
+.monthName {
+  overflow: hidden;
+}
+
+table {
+  margin: 20px;
+}
+footer {
+  background-color: powderblue;
+  text-align: center;
+  padding: 10px;
+}
+
+.presentDay {
+  background-color: powderblue;
+  color: rgb(170, 88, 116);
+  border-radius: 10px;
+  font-weight: 800;
+
+}
+/* const weekdays = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]; */
