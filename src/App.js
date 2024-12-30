@@ -76,6 +76,13 @@ function App() {
   const weeks = chunk(dates, 7);
   console.log(month)
 
+  const handleReset = () => {
+    setMonth(format(new Date(), "MMMM"));
+    setMonthNum(Number(format(new Date(), "MM")));
+    setYear(Number(format(new Date(), "yyyy")));
+
+  }
+
   return (
     <main>
       <div className='header flex-item'>
@@ -119,7 +126,7 @@ function App() {
         </tbody>
       </table>
       <footer>
-        <div className='day'>{day}</div>
+        {presentMonth==month&&presentYear==year ? <div className='day'>{day}</div> : <button onClick={handleReset}>Hello</button>}
       </footer>
 
     </main>
