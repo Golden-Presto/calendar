@@ -1,0 +1,49 @@
+{
+  "name": "@homagni/gp-calendar",
+  "version": "1.0.2",
+  "description": "A fully responsive calendar component for React with event support",
+  "license": "MIT",
+  "main": "dist/index.cjs",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=17 || >=18",
+    "react-dom": ">=17 || >=18"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.4"
+  },
+  "keywords": [
+    "react",
+    "calendar",
+    "component",
+    "responsive",
+    "events",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Golden-Presto/calendar"
+  },
+  "bugs": {
+    "url": "https://github.com/Golden-Presto/calendar/issues"
+  },
+  "homepage": "https://github.com/Golden-Presto/calendar#readme"
+}

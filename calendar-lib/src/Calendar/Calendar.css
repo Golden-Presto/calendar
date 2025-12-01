@@ -1,0 +1,186 @@
+.gp-calendar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  container-type: size;
+  position: relative;
+}
+
+/* Header */
+.gp-cal-header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
+  gap: 2cqmin;
+  padding: 1cqmin;
+  height: 10cqh;
+}
+
+.gp-title {
+  font-weight: 600;
+  font-size: 8cqh;
+  color: #333;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Navigation buttons */
+.gp-nav {
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  font-size: 8cqh;
+  border: none;
+  border-radius: 0.5cqmin;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.gp-nav:hover {
+  opacity: 0.8;
+}
+
+/* Reset button container */
+.gp-reset-container {
+  display: flex;
+  justify-content: center;
+  padding: 0 1cqmin;
+  height: 6cqh;
+}
+
+.gp-reset {
+  background: var(--gp-primary, #3b82f6);
+  color: #fff;
+  font-weight: 600;
+  font-size: 4.8cqh;
+  border: none;
+  border-radius: 0.5cqmin;
+  padding: 0 3cqmin;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.gp-reset:hover {
+  opacity: 0.9;
+}
+
+/* Weekdays */
+.gp-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5cqmin;
+  padding: 1cqmin;
+  height: 6cqh;
+}
+
+.gp-weekday {
+  text-align: center;
+  font-size: 4.8cqh;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Grid layout */
+.gp-grid {
+  flex: 1;
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 0.5cqmin;
+  padding: 0 1cqmin 1cqmin;
+}
+
+.gp-row {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5cqmin;
+}
+
+.gp-cell {
+  border: 1px solid #eee;
+  border-radius: 1cqmin;
+  background: var(--gp-bg, #fff);
+  overflow: hidden;
+  position: relative;
+  container-type: size;
+}
+
+/* Day cells */
+.gp-day {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.gp-day--out {
+  opacity: 0.45;
+}
+
+.gp-day--today {
+  background: var(--gp-today, #3b82f6);
+  color: #fff;
+}
+
+/* Day number */
+.gp-day-number {
+  font-size: 80cqh;
+  line-height: 1;
+  color: var(--gp-font-color, #fff);
+  font-weight: 500;
+}
+
+.gp-day--today .gp-day-number {
+  color: #fff;
+}
+
+/* Event dots */
+.gp-dots {
+  position: absolute;
+  bottom: 2cqh;
+  left: 2cqh;
+  right: 2cqh;
+  display: flex;
+  gap: 2cqh;
+  align-items: center;
+}
+
+.gp-dot {
+  width: 8cqh;
+  height: 8cqh;
+  border-radius: 50%;
+  background: var(--gp-accent, #10b981);
+  flex-shrink: 0;
+}
+
+.gp-day--today .gp-dot {
+  background: #fff;
+}
+
+.gp-count {
+  margin-left: auto;
+  font-size: 16cqh;
+  color: var(--gp-accent, #10b981);
+  font-weight: 600;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.gp-day--today .gp-count {
+  color: #fff;
+}

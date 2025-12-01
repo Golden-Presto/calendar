@@ -4,7 +4,7 @@
   "homepage": "https://Golden-Presto.github.io/calendar",
   "private": true,
   "dependencies": {
-    "date-fns": "^3.6.0",
+    "@homagni/gp-calendar": "file:calendar-lib",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1"
